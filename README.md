@@ -68,8 +68,7 @@ par la même occasion il serait interressant d'étudier l'architecture client-se
 
 ### tech
 
-Je rajouterai une config eslint/prettier (flemme Rome) + un env docker (simple) basé sur ubuntu/node/pnpm/git avec tout ce qu'il faut pour dev
-vous n'aurez rien a installer hormis docker.
+J'ai mis en place un env docker (basic) basé sur ubuntu (jammy)/ pnpm/ node  lts)/git
 
 Mais !
 
