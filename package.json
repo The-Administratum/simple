@@ -1,17 +1,29 @@
 {
-  "name": "simple",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "node index.mjs"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "engineStrict" : true,
-  "engines": {
-    "pnpm": "^7.29.1"
-  }
+    "name": "simple",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node src/index.mjs",
+        "lint": "eslint . --fix",
+        "prettier": "npx prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "engineStrict": true,
+    "engines": {
+        "pnpm": "^7.29.1"
+    },
+    "dependencies": {
+        "mri": "^1.2.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-promise": "^6.1.1",
+        "prettier": "^2.8.4"
+    }
 }
