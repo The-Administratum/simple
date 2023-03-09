@@ -1,7 +1,6 @@
 # SIMPLE
 
-C'est un petit projet que je compte faire avant de commencer quoique ce soit.
-le but est d'avoir une cli facilement extensible qui soit capable de lancer des script bash/zsh et powershell.
+C'est un petit projet que je compte faire avant de commencer quoique ce soit. le but est d'avoir une cli facilement extensible qui soit capable de lancer des script bash/zsh et powershell.
 
 comme je ne sais pas faire une cli (vous pouvez me juger) et comme il faut commencer quelque part, je me base sur le code source de nuxi la cli du framework nuxt.
 
@@ -15,17 +14,15 @@ j'aimerai que l'on puisse taper ce genre de commande dans un terminal :
 
 > simple cpp install cmake
 
->simple eslint install
+> simple eslint install
 
->simple unity configure
+> simple unity configure
 
-*nom du module en premier suivi de la commande*
-*module = module esm*
+_nom du module en premier suivi de la commande_ _module = module esm_
 
 ## Dans un second temps :
 
-Je compte vite faire evoluer le tout avec un objet global en guise de liant.
-par exemple :
+Je compte vite faire evoluer le tout avec un objet global en guise de liant. par exemple :
 
 ```JS
 //Application.mjs
@@ -53,8 +50,7 @@ const Bootstrap = function(){
 }
 ```
 
-Et j'aimerai orienter l'architecture sur une architecture basée sur des services agnostiques.
-Pour cela j'aimerai m'aider du systeme de monorepo de pnpm.
+Et j'aimerai orienter l'architecture sur une architecture basée sur des services agnostiques. Pour cela j'aimerai m'aider du systeme de monorepo de pnpm.
 
 ### troisième temps
 
@@ -62,25 +58,24 @@ Pour diverse raison notamment de performance mais de cross plateforme j'aimerai 
 
 par la même occasion il serait interressant d'étudier l'architecture client-server d'un deamon. (idée)
 
-
 ## exigences :
-
 
 ### tech
 
-J'ai mis en place un env docker (basic) basé sur ubuntu (jammy)/ pnpm/ node  lts)/git
+J'ai mis en place un env docker (basic) basé sur ubuntu (jammy)/ pnpm/ node lts)/git
 
 Mais !
 
 si vous voulez participer sachez que :
 
-- le mot clé "Class" est banni
+-   le mot clé "Class" est banni
 
-- les return sur une seule ligne est interdit 
+-   les return sur une seule ligne est interdit
 
-exemple : 
+exemple :
+
 ```JS
-// bad 
+// bad
 
 if(condition)return
 
@@ -91,14 +86,13 @@ if(condition){
 }
 ```
 
-- restreignez l'export par defaut préférez les export nommés.
+-   restreignez l'export par defaut préférez les export nommés.
 
-- préférez l'api objet si vous avez des paramètres optionnels.
+-   préférez l'api objet si vous avez des paramètres optionnels.
 
-- le formatage linux de mise ( désolé aux pro cpp mais je vous rassur le gnu style est banni aussi )
+-   le formatage linux de mise ( désolé aux pro cpp mais je vous rassur le gnu style est banni aussi )
 
-- utilisez PNPM
-
+-   utilisez PNPM
 
 et pour l'instant c'est tout
 
@@ -106,14 +100,13 @@ ps : ça risque de bouger vite car node me saoule avec sont commonJS.
 
 ### git
 
-Nous utilisons git, merci de faire vos commit les plus atomiques possible, le nommage je m'en fous.
-Pas de wip lors d'une pr.
+Nous utilisons git, merci de faire vos commit les plus atomiques possible, le nommage je m'en fous. Pas de wip lors d'une pr.
 
 en revanche j'utilise git-flow comme méthode de participation ce qui veut dire que vous ne pouvez commiter directement sur master, master est sacrée.
 
 le merge n'est utilisé que pour les pr préférez lui le rebase et rebasez vous souvent.
 
-tips : 
+tips :
 
 > git fetch --all --prune
 
